@@ -1,0 +1,63 @@
+	• HTML (Hypertext Markup Language) for content
+	• CSS (Cascading Style Sheets) for design.
+
+	1. Learn HTML by Building a Cat Photo App
+	
+		• HTML tags give a webpage its structure. You can use HTML tags to add photos, buttons, and other elements to your webpage.
+				□ The h1 through h6 heading elements are used to signify the importance of content below them. The lower the number, the higher the importance!
+				□ Only use one h1 element per page and place lower importance headings below higher importance headings.
+				□ The p element is used to create a paragraph of text on websites.
+				□ HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility. i.e. <main> </main> tag
+				□ In the previous step, you put the h1, h2, comment, and p elements inside the main element. This is called nesting. Nested elements should be placed two spaces further to the right of the element they are nested in. This spacing is called indentation and it is used to make HTML easier to read.
+				i.e. 
+
+				
+				□ You can add images to your website by using the img element. img elements have an opening tag without a closing tag (<img/>). A tag for an element without a closing tag is known as a self-closing tag.  (<>: opening tab </>: closing tab)
+				HTML attributes are special words used inside the opening tag of an element to control the element's behavior. The src attribute in an img element specifies the image's URL (where the image is located).
+				
+				Here is an example of an img element with a src attribute pointing to the freeCodeCamp logo:
+				
+				<img src="https://cdn.freecodecamp.org/platform/universal/fcc_secondary.svg">
+				
+				□ All img elements should have an alt attribute.
+				□ The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load. For example, <img src="cat.jpg" alt="A cat"> has an alt attribute with the text A cat.
+				□ You can link to another page with the anchor (a) element. For example, 
+				<a href='https://freecodecamp.org'></a> would link to freecodecamp.org.
+				□ target attribute with the value _blank to the anchor (a) element's opening tag, so that the link opens in a new tab. 
+				i.e.: <a href='https://freecodecamp.org' target="_blank"></a>
+				□ Before adding any new content, you should make use of a section element to separate the cat photos content from the future content.
+				□ The figure element represents self-contained content and will allow you to associate an image with a caption.
+				□ A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. 
+					® For example, <figcaption>A cute cat</figcaption> adds the caption A cute cat.
+				□ Form element is used to collect information from users.
+				□ The action attribute indicates where form data should be sent. For example,      
+				<form action="/submit-url"></form>
+				 tells the browser that the form data should be sent to the path /submit-url.
+				□ The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.
+				□ There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer.
+				□ In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">.
+				□ To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element.
+				□ Even though you added your button below the text input, they appear next to each other on the page. That's because both input and button elements are inline elements, which don't appear on new lines.
+				□ The button you added will submit the form by default. However, relying on default behavior may cause confusion. Add the type attribute with the value submit to the button to make it clear that it is a submit button.
+			
+				□ You can use radio buttons for questions where you want only one answer out of multiple options.
+				
+				Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-closing.
+				□ label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.
+				□ The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
+				□ Notice that both radio buttons can be selected at the same time. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value
+				□ If you select the first radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+
+				□ The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+				□ The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+				
+
+				□ Forms commonly use checkboxes for questions that may have more than one answer. For example, here's a checkbox with the option of                                      tacos: <input type="checkbox"> tacos
+				□ There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute.
+
+				□ Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include the value attribute with any checkboxes or radio buttons on the page:
+
+				□ In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it. There's no need to set a value to the checked attribute. Instead, just add the word checked to the input element, making sure there is space between it and other attributes.
+				□ Notice that everything you've added to the page so far is inside the body element. All page content elements that should be rendered to the page go inside the body element. However, other important information goes inside the head element.
