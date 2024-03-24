@@ -18,6 +18,7 @@ h2 {
   font-style: italic;
 }
 
+/* list of selectors */
 h1,
 h2,
 p {
@@ -40,6 +41,8 @@ img{
   }
 hr {
   height: 2px;
+  /*put some shadow*/
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
   background-color: brown;
   border-color: brown;
 }
@@ -69,6 +72,8 @@ h2 {
 .price {
   text-align: right;
   width: 25%;
+  /* make the text italic
+  font-style: italic; */
 }
 /*FOOTER*/
 footer {
@@ -87,5 +92,6 @@ a:active {
   color: brown;
 }
 .address {
+  margin-top: 5px;
   margin-bottom: 5px;
 }
